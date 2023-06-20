@@ -15,25 +15,42 @@
         <nav>
             <a href="#about" class="a-nav">About Me</a>
             <a href="#portfolio" class="a-nav">Portfolio</a>
-            <a href="#contact"class="a-nav"> Contact</a>
+            <a href="#contact" class="a-nav"> Contact</a>
         </nav>
-    <div class="logo">
+        <div class="logo">
             <img src="\pics\me_pic.png" alt="my_pic">
             <div class="description">
-            <h1>Patrycja Chomiak</h1>
-            <p>Junior Developer</p>
-            <a href="#contact"> Let's chat</a>
-        </div>
+                <h1>Patrycja Chomiak</h1>
+                <p>Junior Developer</p>
+                <a href="#contact"> Let's chat</a>
+            </div>
         </div>
     </main>
     <br><br>
 
     <div class="about" id="about">
         <div class="about-container">
-        <h2>About me</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod impedit, consequuntur nulla tempora dolorum quibusdam unde, delectus aspernatur, quasi consequatur molestias! Ipsum mollitia nihil tempora odio. Sed eveniet consequatur perspiciatis.</p>
+            <h2>About me</h2>
+            <p>Hello there! I'm a London based, self-taught junior developer with an insatiable appetite for coding and
+                an unwavering commitment to learning - which led me to recently complete an intense 12-week software
+                development bootcamp. </p>
+            <p>When I'm not coding, you might find me at the poker table, enjoying the blend of strategy and calculated
+                risks. I also have a passion for strategy games that challenge my problem-solving abilities (like what's
+                the fastest way to conquer the world?). I also love getting lost in books and immersing myself in
+                thrilling
+                movies and shows.
+            </p>
+
+            <p> Driven by my enthusiasm, dedication, and relentless pursuit of knowledge, I'm eager to bring my coding
+                skills to the table and embark on exciting projects. With a strong foundation from my bootcamp
+                experience and the tenacity cultivated through self-study, I'm well-equipped to tackle any challenge
+                that comes my way.</p>
+            <p>I'm excited to discuss potential opportunities and how my skills can contribute to your projects!</p>
+
+            <button id="downloadButton">Download CV</button>
+        </div>
+
     </div>
-</div>
 
     <div class="portfolio" id="portfolio">
         <h2 class="project">JavaScript, HTML, CSS</h2>
@@ -45,28 +62,32 @@
 
 
     <div class="contact" id="contact">
-    <div class="contactForm">
-        <h2>Get in touch</h2>
-        <form>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
+        <div class="contactForm">
+            <h2>Get in touch</h2>
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" required>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required>
 
-            <label for="message">Message </label>
-            <textarea name="message" id="message" cols="40" rows="5" required></textarea >
+                <label for="message">Message </label>
+                <textarea name="message" id="message" cols="40" rows="5" required></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-</div>
 
     <footer>
         <p>Patrycja Chomiak</p>
-        <i class="fa-brands fa-github fa-2xl"></i>
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
-        </footer>
+        <i class="fa-brands fa-github fa-2xl" id="githubIcon"></i>
+        <i class="fa-brands fa-linkedin fa-2xl" id="linkedinIcon"></i>
+    </footer>
+
+
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
