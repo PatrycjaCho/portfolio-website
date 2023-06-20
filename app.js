@@ -13,7 +13,7 @@ linkedinIcon.addEventListener("click", () => {
 
 downloadButton.addEventListener("click", function() {
 
-    const cv = '/docs/cv.pdf';
+    const cv = '/files/cv.pdf';
     const downloadLink = document.createElement('a');
     downloadLink.href = cv;
 
