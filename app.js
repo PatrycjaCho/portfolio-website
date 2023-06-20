@@ -2,6 +2,7 @@ let githubIcon = document.getElementById("githubIcon")
 let linkedinIcon = document.getElementById("linkedinIcon")
 let downloadButton = document.getElementById("downloadButton")
 
+
 githubIcon.addEventListener("click", () => {
     window.open("https://github.com/PatrycjaCho");
 })
@@ -21,3 +22,5 @@ downloadButton.addEventListener("click", function() {
 
     downloadLink.click();
 })
+
+

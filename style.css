@@ -178,7 +178,7 @@ nav {
   align-items: center;
 }
 
-.contactForm {
+.contactFormBox {
   width: 800px;
   margin: 0 auto;
   padding: 40px;
@@ -192,24 +192,24 @@ nav {
   margin-bottom: 50px;
 }
 
-.contactForm h2 {
+.contactFormBox h2 {
   font-size: 2.2em;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.contactForm form {
+.contactFormBox form {
   display: grid;
   gap: 20px;
 }
 
-.contactForm label {
+.contactFormBox label {
   font-weight: bold;
 }
 
-.contactForm input[type="text"],
-.contactForm input[type="email"],
-.contactForm textarea {
+.contactFormBox input[type="text"],
+.contactFormBox input[type="email"],
+.contactFormBox textarea {
   width: 100%;
   padding: 15px;
   border: none;
@@ -218,11 +218,11 @@ nav {
   color: #333;
 }
 
-.contactForm textarea {
+.contactFormBox textarea {
   resize: none;
 }
 
-.contactForm input[type="submit"] {
+.contactFormBox input[type="submit"] {
   padding: 15px;
   background-color: #333;
   color: #fff;
@@ -232,7 +232,7 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-.contactForm input[type="submit"]:hover {
+.contactFormBox input[type="submit"]:hover {
   background: #6c757d;
 
   transition: background-color 0.5s ease;
