@@ -29,22 +29,18 @@ downloadButton.addEventListener("click", function() {
 })
 
 
-filmflixSite.addEventListener("click", () => {
-    window.open("https://film-flix.onrender.com/");
-
+filmflixSite.addEventListener('click', function() {
+    window.open('https://film-flix.onrender.com/', '_blank');
 })
 
-filmflixCode.addEventListener("click", () => {
+filmflixCode.addEventListener("click", function() {
     window.open("https://github.com/PatrycjaCho/FilmFlix");
-
 })
 
-budgetSite.addEventListener("click", () => {
+budgetSite.addEventListener("click", function() {
     window.open("https://patriciachomiak-budgetcalculator.netlify.app/");
-
 })
 
-budgetCode.addEventListener("click", () => {
+budgetCode.addEventListener("click", function() {
     window.open("https://github.com/PatrycjaCho/Budget-Calculator");
-
 })
