@@ -172,6 +172,98 @@ nav {
   transition: background-color 0.5s ease;
 }
 
+
+.portfolio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.portfolioButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+}
+
+.portfolioButton {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.8em 1.5em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #6c757d;
+  box-shadow: 0 0 0 0 #6c757d;
+}
+
+.portfolioButton:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #6c757d;
+}
+
+.portfolioButton:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #6c757d;
+}
+
+.portfolio h2,
+h3 {
+  display: flex;
+  justify-content: center;
+
+  text-transform: uppercase;
+}
+
+.portfolio p {
+  font-size: 1.1rem;
+
+  padding-bottom: 15px;
+}
+
+
+.projectWrapper {
+  position: relative;
+
+  width: 75%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  text-align: left;
+
+  padding: 25px;
+  margin: 50px;
+  background-color: black;
+  background-color: linear-gradient(137deg, rgb(255, 0, 179) 0%);
+  transition: 0.3s ease;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
+}
+
+.projectWrapper::after {
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s ease;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  border-radius: 28px;
+}
+
+.projectWrapper:hover {
+  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
+}
+
 .footerWrapper {
   height: 100vh;
 }
@@ -269,99 +361,10 @@ footer p,
   cursor: pointer;
 }
 
-.portfolio {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
+/* Optimizing for phones */
 
-.portfolioButtons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-
-}
-
-.portfolioButton {
-  text-transform: uppercase;
-  background-color: white;
-  color: black;
-  border-radius: 10em;
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 0.8em 1.5em;
-  margin: 0 0.5em;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #6c757d;
-  box-shadow: 0 0 0 0 #6c757d;
-}
-
-.portfolioButton:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 #6c757d;
-}
-
-.portfolioButton:active {
-  transform: translateY(2px) translateX(1px);
-  box-shadow: 0 0 0 0 #6c757d;
-}
-
-.portfolio h2,
-h3 {
-  display: flex;
-  justify-content: center;
-
-  text-transform: uppercase;
-}
-
-.portfolio p {
-  font-size: 1.1rem;
-
-  padding-bottom: 15px;
-}
-
-
-.projectWrapper {
-  position: relative;
-
-  width: 75%;
-  height: 35%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-
-  text-align: left;
-
-  padding: 25px;
-  margin: 50px;
-  background-color: black;
-  background-color: linear-gradient(137deg, rgb(255, 0, 179) 0%);
-  transition: 0.3s ease;
-  border-radius: 30px;
-  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
-}
-
-.projectWrapper::after {
-  position: absolute;
-  z-index: 1;
-  transition: 0.3s ease;
-  height: 98%;
-  width: 98%;
-  top: 1%;
-  left: 1%;
-  border-radius: 28px;
-}
-
-.projectWrapper:hover {
-  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
-}
-
-
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .landing {
     font-size: 1.5rem;
     height: auto;
@@ -398,10 +401,12 @@ h3 {
   .landing img {
     display: none;
   }
+
   .about-container {
     height: auto;
     margin-bottom: 250px;
   }
+
   .about-container h2 {
     font-size: 1.5rem;
   }
@@ -452,8 +457,7 @@ h3 {
   }
 
   .projectWrapper,
-  .projectWrapper::after
-  .projectWrapper:hover {
+  .projectWrapper::after .projectWrapper:hover {
     filter: none;
   }
 
