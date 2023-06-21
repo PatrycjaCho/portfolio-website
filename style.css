@@ -259,6 +259,11 @@ footer p,
 
 }
 
+#githubIcon,
+#linkedinIcon {
+  cursor: pointer;
+}
+
 .portfolio {
   height: 100vh;
   display: flex;
@@ -310,8 +315,10 @@ footer p,
   box-shadow: 0 0 0 0 #6c757d;
 }
 
-.portfolio h2 {
+.portfolio h2, h3 {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+
+  text-transform: uppercase;
 }
+
