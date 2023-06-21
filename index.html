@@ -53,23 +53,27 @@
     </div>
 
     <div class="portfolio" id="portfolio">
-        <div class="portfolioTab">
+
+        <div class="projectWrapper">
             <h2>Budget Calculator</h2>
             <h3>JavaScript, HTML, CSS</h3>
 
-            <p>The "Budget Calculator" project is an application designed to manage personal finances.
-                It showcases my expertise in various key areas, including local storage utilization, local storage
-                manipulation, form validation, and efficient data handling through arrays. Lorem ipsum dolor sit
-                amet
-                consectetur, adipisicing elit. Fugit doloribus dicta sequi laborum esse beatae quam fuga officia
-                dignissimos! Voluptatum unde pariatur soluta aliquam, fuga asperiores eius illum rem porro.
+            <p>
+                I developed this project using JavaScript to effectively utilize the browser's local storage for
+                efficient storage and retrieval of user data. To handle financial transactions, I implemented local
+                storage manipulation functions using JavaScript methods and events. In order to ensure accurate and
+                valid user input, I incorporated form validation in JavaScript. The validated data is stored and managed
+                using array manipulation techniques. To enhance the user experience, I implemented HTML modals and
+                utilized CSS to create an interactive and user-friendly interface.
             </p>
+            <div class="portfolioButtons">
+                <button class="portfolioButton" id="budgetCode"> View the code</button>
+                <button class="portfolioButton" id="budgetSite"> Visit the site</button>
+            </div>
         </div>
-        <div class="portfolioButtons">
-            <button class="portfolioButton" id="budgetCode"> View the code</button>
-            <button class="portfolioButton" id="budgetSite"> Visit the site</button>
-        </div>
-        <div class="portfolioTab">
+
+
+        <div class="projectWrapper">
             <h2>FilmFLix</h2>
             <h3>Python, Flask, SQLite; javascript, html, css</h3>
             <p>The "FilmFlix" project is a database... Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -79,41 +83,40 @@
                 adipisicing elit. Voluptates aspernatur, nesciunt, repudiandae non iste beatae unde atque tempora
                 vitae
                 hic quia minus nemo, consequuntur dolorem at minima facilis voluptatem et!</p>
-        </div>
-        <div class="portfolioButtons">
-            <button class="portfolioButton" id="filmflixCode"> View the code</button>
-            <button class="portfolioButton" id="filmflixSite"> Visit the site</a></button>
+            <div class="portfolioButtons">
+                <button class="portfolioButton" id="filmflixCode"> View the code</button>
+                <button class="portfolioButton" id="filmflixSite"> Visit the site</a></button>
+            </div>
         </div>
     </div>
-
     <div class="footerWrapper">
-    <div class="contact" id="contact">
-        <div class="contactFormBox">
-            <h2>Get in touch</h2>
-            <h3>( Or just drop me an email at patriciachomiak@gmail.com )</h3>
-            <form name="contact" method="POST" data-netlify="true" action="/success">
-                <input type="hidden" name="form-name" value="contact" />
+        <div class="contact" id="contact">
+            <div class="contactFormBox">
+                <h2>Get in touch</h2>
+                <h3>( Or just drop me an email at patriciachomiak@gmail.com )</h3>
+                <form name="contact" method="POST" data-netlify="true" action="/success">
+                    <input type="hidden" name="form-name" value="contact" />
 
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email: </label>
-                <input type="text" id="email" name="email" required>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" required>
 
-                <label for="message">Message </label>
-                <textarea name="message" id="message" cols="40" rows="5" required></textarea>
+                    <label for="message">Message </label>
+                    <textarea name="message" id="message" cols="40" rows="5" required></textarea>
 
-                <input type="submit" value="Submit">
-            </form>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <p>Patrycja Chomiak</p>
-        <i class="fa-brands fa-github fa-2xl" id="githubIcon"></i>
-        <i class="fa-brands fa-linkedin fa-2xl" id="linkedinIcon"></i>
-    </footer>
-</div>
+        <footer>
+            <p>Patrycja Chomiak</p>
+            <i class="fa-brands fa-github fa-2xl" id="githubIcon"></i>
+            <i class="fa-brands fa-linkedin fa-2xl" id="linkedinIcon"></i>
+        </footer>
+    </div>
 
 
     <script src="./app.js"></script>
