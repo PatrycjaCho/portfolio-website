@@ -475,6 +475,11 @@ footer p,
     margin-bottom: 20px;
   }
 
+  .contactFormBox h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
   footer {
     margin: 20px;
     justify-content: center;
