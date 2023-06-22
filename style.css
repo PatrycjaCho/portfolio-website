@@ -6,14 +6,16 @@ body {
 
   background-color: black;
   color: white;
-
 }
+
+
+/* Home page / landing page */
 
 .landing {
   text-transform: uppercase;
   font-size: 2.5rem;
 
-  height: 100vh;
+  height: auto;
 }
 
 .landing .logo {
@@ -22,63 +24,35 @@ body {
   justify-content: space-around;
 }
 
+.landing img {
+  height: 100vh;
+  opacity: 0.8;
+}
+
 .description {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 
-  margin-top: 200px;
-
+  margin-top: 10%;
 }
 
 .description h1 {
   font-size: 2em;
   margin-bottom: 0;
-  margin-right: 200px;
+  margin-right: 10vw;
 }
 
 .description p {
   align-self: flex-end;
-  margin-right: 150px;
+  margin-right: 8vw;
   margin-top: 0;
-  margin-bottom: 20px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.a-nav {
-  text-decoration: none;
-  color: #adb5bd;
-  margin-right: 50px;
-  margin-top: 10px;
-
-  font-size: 1.5rem;
-}
-
-.a-nav:hover {
-  color: white;
-  transition: background-color 0.5s ease;
-}
-
-
-.landing img {
-  height: 100vh;
-  opacity: 0.8;
-
+  margin-bottom: 1vh;
 }
 
 .description a {
-
   align-self: flex-end;
-  margin-right: 100px;
-  margin-top: 0;
-
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -90,12 +64,12 @@ nav {
   box-shadow: 2px 2px #adb5bd;
   text-align: center;
 
-  width: 200px;
+  width: 12vw;
+  height: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  margin-top: 10px;
-
+  margin-top: 1vh;
+  margin-right: 6vw;
 }
 
 .description a:hover {
@@ -106,26 +80,47 @@ nav {
 }
 
 
+/* nav bar  */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-nav {
+  text-decoration: none;
+  color: #adb5bd;
+  margin-right: 6vw;
+  margin-top: 1vh;
+
+  font-size: 0.7em;
+}
+
+.a-nav:hover {
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+/* about page */
+
 .about {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .about-container {
-
   width: 70%;
   height: 80%;
+  margin: 5%;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   text-align: left;
-
-
 }
 
 .about-container h2 {
@@ -142,9 +137,6 @@ nav {
 
 #downloadButton {
   order: 3;
-
-  margin-top: 50px;
-
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -155,11 +147,11 @@ nav {
   box-shadow: 2px 2px #adb5bd;
   text-align: center;
 
-  width: 200px;
-  height: 70px;
-  padding-left: 15px;
-  padding-right: 15px;
-
+  width: 20vw;
+  height: 7vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-top: 8vh;
   align-self: center;
 
   font-size: 1.3em;
@@ -172,46 +164,13 @@ nav {
   transition: background-color 0.5s ease;
 }
 
+/* portfolio page  */
 
 .portfolio {
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-
-.portfolioButtons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-
-}
-
-.portfolioButton {
-  text-transform: uppercase;
-  background-color: white;
-  color: black;
-  border-radius: 10em;
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 0.8em 1.5em;
-  margin: 0 0.5em;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #6c757d;
-  box-shadow: 0 0 0 0 #6c757d;
-}
-
-.portfolioButton:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 #6c757d;
-}
-
-.portfolioButton:active {
-  transform: translateY(2px) translateX(1px);
-  box-shadow: 0 0 0 0 #6c757d;
 }
 
 .portfolio h2,
@@ -228,6 +187,37 @@ h3 {
   padding-bottom: 15px;
 }
 
+.portfolioButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  padding-bottom: 20px;
+}
+
+.portfolioButton {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.8em 1.5em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(209, 38, 197, 0.5);
+  box-shadow: 0 0 0 0 rgb(255, 0, 179);
+}
+
+.portfolioButton:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 rgb(255, 0, 179);
+}
+
+.portfolioButton:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 rgb(255, 0, 179);
+}
 
 .projectWrapper {
   position: relative;
@@ -264,8 +254,10 @@ h3 {
   filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
 }
 
+/* contact / footer page */
+
 .footerWrapper {
-  height: 100vh;
+  height: auto;
 }
 
 .contact {
@@ -276,7 +268,6 @@ h3 {
 
 .contactFormBox {
   width: 800px;
-  margin: 0 auto;
   padding: 40px;
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -284,8 +275,8 @@ h3 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .contactFormBox h2 {
@@ -337,13 +328,7 @@ h3 {
 footer {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
-
-  margin-right: 35px;
-  margin-top: 150px;
 }
-
-
 
 footer p,
 #githubIcon,
@@ -353,14 +338,12 @@ footer p,
 
   font-size: 1.8em;
   align-self: baseline;
-
 }
 
 #githubIcon,
 #linkedinIcon {
   cursor: pointer;
 }
-
 
 /* Optimizing for phones */
 
@@ -373,13 +356,12 @@ footer p,
   .description {
     font-size: 2rem;
     margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 250px;
+    margin-top: 10vh;
   }
 
   .description a {
-    align-self: flex-start;
     font-size: 1.5rem;
+    width: auto;
   }
 
   .description h1 {
@@ -417,6 +399,7 @@ footer p,
 
   #downloadButton {
     height: 50px;
+    width: auto;
     margin-top: 20px;
     font-size: 1rem;
   }
@@ -503,5 +486,20 @@ footer p,
     margin-right: 30px;
     margin-top: 10px;
     font-size: 1.5em;
+  }
+}
+
+/* optimising for smaller screen  */
+
+@media (max-width: 1500px) {
+
+  .landing {
+    height: auto;
+  }
+
+  .landing img {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
   }
 }
