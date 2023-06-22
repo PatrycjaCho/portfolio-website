@@ -13,7 +13,7 @@ githubIcon.addEventListener("click", () => {
 })
 
 linkedinIcon.addEventListener("click", () => {
-    window.open("https://www.linkedin.com/in/patrycja-c-b630741b1/");
+    window.open("https://www.linkedin.com/in/patrycjachomiak/");
 })
 
 
