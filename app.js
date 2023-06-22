@@ -19,11 +19,11 @@ linkedinIcon.addEventListener("click", () => {
 
 downloadButton.addEventListener("click", function() {
 
-    const cv = '/files/cv.pdf';
+    const cv = '/files/Patrycja-Chomiak-CV.pdf';
     const downloadLink = document.createElement('a');
     downloadLink.href = cv;
 
-    downloadLink.setAttribute("download", "cv.pdf");
+    downloadLink.setAttribute("download", "/files/Patrycja-Chomiak-CV.pdf");
 
     downloadLink.click();
 })
