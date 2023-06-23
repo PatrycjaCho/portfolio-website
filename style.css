@@ -155,6 +155,8 @@ nav {
   align-self: center;
 
   font-size: 1.3em;
+
+  cursor: pointer;
 }
 
 #downloadButton:hover {

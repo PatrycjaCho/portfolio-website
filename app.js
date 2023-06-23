@@ -1,10 +1,8 @@
 const githubIcon = document.getElementById("githubIcon")
 const linkedinIcon = document.getElementById("linkedinIcon")
 const downloadButton = document.getElementById("downloadButton")
-
 const filmflixSite = document.getElementById("filmflixSite")
 const filmflixCode = document.getElementById("filmflixCode")
-
 const budgetSite = document.getElementById("budgetSite")
 const budgetCode = document.getElementById("budgetCode")
 
